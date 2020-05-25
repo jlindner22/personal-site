@@ -38,10 +38,9 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
-      <Link to="/contact/">Contact</Link>
+      <SEO title="Jen's Site" />
       <Bio />
-      {posts.map(({ node }) => {
+      {/* {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article key={node.fields.slug}>
@@ -66,7 +65,8 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
             </section>
           </article>
         )
-      })}
+      })} */}
+      <img src='deploy-and-secure/public/IMG_9702.jpeg' alt="noo"></img>
     </Layout>
   )
 }

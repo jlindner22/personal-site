@@ -8,13 +8,15 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import pic from "./content/assets/IMG_9702.jpeg"
+
 
 import { rhythm } from "../utils/typography"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.png/" }) {
+      avatar: file(absolutePath: { regex: "/IMG_9702.jpeg" }) {
         childImageSharp {
           fixed(width: 50, height: 50) {
             ...GatsbyImageSharpFixed
@@ -43,24 +45,27 @@ const Bio = () => {
         marginBottom: rhythm(2.5),
       }}
     >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author.name}
-        style={{
-          marginRight: rhythm(1 / 2),
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
-        }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
+      <img src={pic} alt="jen"
+        // fixed={data.avatar.childImageSharp.fixed}
+        // alt={author.name}
+        // style={{
+        //   marginRight: rhythm(1 / 2),
+        //   marginBottom: 0,
+        //   minWidth: 50,
+        //   borderRadius: `100%`,
+        // }}
+        // imgStyle={{
+        //   borderRadius: `50%`,
+        // }}
       />
       <p>
-        Written by <strong>Jen Lindner</strong> {author.summary}
+        Written by <strong>{author.name}</strong>, {author.summary}
         {` `}
-        <a href={`https://www.linkedin.com/in/jen-lindner13/`}>
+        <a href={`https://www.linkedin.com/in/${social.linkedin}`}>
           LinkedIn
+        </a> {`  `}
+        <a href={`https://github.com/${social.github}`}>
+          GitHub
         </a>
       </p>
     </div>

@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Deploy and Secure`,
+    title: `Welcome!`,
     author: {
-      name: `Oleg Chursin`,
-      summary: `who lives and works in New York building cool things.`,
+      name: `Jen Lindner`,
+      summary: `jigsaw puzzle solver and aspiring software engineer.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://jen.lindner.netlify.com/`,
     social: {
-      linkedin: `olegchursin`
+      linkedin: `jen-lindner13/`,
+      github: `jlindner22/`
     },
   },
   plugins: [
