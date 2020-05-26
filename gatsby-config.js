@@ -6,11 +6,14 @@ module.exports = {
       summary: `jigsaw puzzle solver and aspiring software engineer.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://jen.lindner.netlify.com/`,
+    siteUrl: `https://jen.lindner.netlify.app/`,
     social: {
       linkedin: `jen-lindner13/`,
       github: `jlindner22/`
     },
+    pictures: {
+      home: `/IMG_9702.jpeg`
+    }
   },
   plugins: [
     {
@@ -49,8 +52,15 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+      `gatsby-transformer-sharp`,
+      `gatsby-plugin-sharp`,
+      {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+          path: `${__dirname}/content/assets`,
+        },
+      },
+    
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
