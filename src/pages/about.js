@@ -2,7 +2,8 @@ import React from 'react'
 import styles from './about.module.css'
 import Container from '../components/container'
 import Layout from "../components/layout"
-   
+import pic from "../../content/assets/IMG_9702.jpeg"
+
     const User = props => (
         <div className={styles.user}>
           <img src={props.avatar} className={styles.avatar} alt="" />
@@ -21,7 +22,7 @@ import Layout from "../components/layout"
                 <User 
                 name="Hi, I'm Jen!"
                 avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
-                excerpt="I'm an avid jigsaw puzzle solver, standup comedy viewer, dog lover, and aspiring software engineer."
+                excerpt="I'm an avid jigsaw puzzle solver, standup comedy viewer, chocolate consumer, dog lover, and aspiring software engineer."
                 />
                 <h2 style={{ color: `white`}}>Technical Skills</h2>
                 <div style={{ color: `white`, fontWeight: `bold`, textAlign: `left` }}>
@@ -33,7 +34,9 @@ import Layout from "../components/layout"
                  <li> CSS </li>
                  <li> ...and I'm currently working on learning Python!</li>
                  </div>
-
+                 <div>
+                <img src={pic} alt="Hiii"/>
+                </div>
             </Container>
             </Layout>
         )

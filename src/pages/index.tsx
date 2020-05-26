@@ -66,7 +66,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
           </article>
         )
       })} */}
-      <img src='./content/assets/IMG_9702.jpeg' alt="noo"/>
+      <img src='../IMG_9702.jpeg' alt="noo"/>
     </Layout>
   )
 }

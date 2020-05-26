@@ -12,8 +12,8 @@ export default function Contact(props) {
         {props.title}
         <div style={{ color: `white` }}>
         <Header headerText="Contact" />
-        <p>Send me a message!</p>
-        <p> <a href="mailto:jenlindner22@gmail.com">Jenlindner22@gmail.com</a>
+        <p>I'd love to hear from you!</p>
+        <p>Send me a message at <a href="mailto:jenlindner22@gmail.com">Jenlindner22@gmail.com</a>!
         </p>
     </div>
     </Container>
