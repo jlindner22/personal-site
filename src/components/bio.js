@@ -7,9 +7,9 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+// import Image from "gatsby-image"
 import Container from "../components/container"
-
+import pic from "../../content/assets/IMG_9702.jpeg"
 import { rhythm } from "../utils/typography"
 
 const Bio = () => {
@@ -24,9 +24,6 @@ const Bio = () => {
           social {
             linkedin
             github
-          }
-          pictures {
-            home
           }
         }
       }
@@ -43,16 +40,15 @@ const Bio = () => {
         marginBottom: rhythm(2.5),
       }}
     >
-      {/* <img fluid={pictures.childImageSharp.fluid} alt="" /> */}
+      {/* <img fluid={pic.childImageSharp.fluid} alt="" /> */}
 
-      {/* <img src={pictures.home} alt="pic"></img> */}
-      <img src={pictures.home}
+      <img src={pic}
           // fixed={data.avatar.childImageSharp.fixed}
          alt={author.name}
          style={{
            marginRight: rhythm(1 / 2),
            marginBottom: 0,
-           minWidth: 50,
+          //  minWidth: 100,
            borderRadius: `100%`,
          }}
          imgStyle={{
@@ -74,7 +70,7 @@ const Bio = () => {
   )
 }
 
-export default Bio
+export default Bio;
 
 
 // avatar: file(absolutePath: { regex: "/IMG_9702.jpeg" }) {

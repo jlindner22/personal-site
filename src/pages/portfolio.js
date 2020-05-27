@@ -3,6 +3,8 @@ import Header from "../components/header"
 import styles from './portfolio.module.css'
 import Container from "../components/container"
 import Layout from "../components/layout"
+import SindyHome from "../../content/assets/Connect_Sindy_Home.png"
+import BlindDateHome from "../../content/assets/BlindDate_Home.png"
     
     const User = props => (
         <div className={styles.user}>
@@ -26,12 +28,12 @@ import Layout from "../components/layout"
         <p> Feel free to <a href="mailto:jenlindner22@gmail.com">contact me </a>with any questions!</p>
         <User
                 name="BlindDate"
-                avatar= 'url(./content/assets/profile-pic.png)'
+                avatar= {BlindDateHome}
                 excerpt="A social/dating application that facilitates relationships without the bias of user photos"
                 />
                 <User
                 name="Connect Sindy"
-                avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
+                avatar= {SindyHome}
                 excerpt="A cow-themed version of Connect Four (two-player)"
                 />
                 <br></br>

@@ -9,16 +9,17 @@
   }
   
   .avatar {
-    flex: 0 0 96px;
-    width: 96px;
-    height: 96px;
+    flex: 0 1 375px;
+    
+    width: 10px;
+    height: 250px;
     margin: 0;
   }
   
   .description {
     flex: 1;
-    margin-left: 18px;
-    padding: 12px;
+    margin-left: 20px;
+    /* padding: 12px; */
   }
   
   .name {
