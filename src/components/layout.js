@@ -59,9 +59,9 @@ const Layout = ({ location, title, children }) => {
       {/* <header>{header}</header> */}
       <header style={{ marginBottom: `1.5rem` }}>
         <Link to="/" style={{ textShadow: `none`, backgroundImage: `none`, textDecoration: 'none'}}>
-          <h3 style={{ display: `inline`}}>Jen's World</h3>
+          <h3 style={{ display: `inline`, marginLeft: `-15rem`}}>Jen's World</h3>
         </Link>
-        <ul style={{ listStyle: `none`, float: `right` }}>
+        <ul style={{ listStyle: `none`, float: `right`, marginRight: `-15rem` }}>
           <ListLink to="/portfolio">Portfolio</ListLink>
           <ListLink to="/about/">About Me</ListLink>
           <ListLink to="/contact/">Contact</ListLink>

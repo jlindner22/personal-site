@@ -1,17 +1,20 @@
 import React from "react"
+import { Link } from "gatsby"
 import Header from "../components/header"
 import styles from './portfolio.module.css'
-import Container from "../components/container"
+import Container from "../components/portfolioContainer"
 import Layout from "../components/layout"
 import SindyHome from "../../content/assets/Connect_Sindy_Home.png"
 import BlindDateHome from "../../content/assets/BlindDate_Home.png"
     
     const User = props => (
         <div className={styles.user}>
-          <img src={props.avatar} className={styles.avatar} alt="thumbnail" />
+         <img src={props.avatar} className={styles.avatar} alt="thumbnail" />
           <div className={styles.description}>
-            <h2 className={styles.name}>{props.name}</h2>
+          <Link to={props.link}> <h2 className={styles.name}>{props.name}</h2></Link>
             <p className={styles.excerpt}>{props.excerpt}</p>
+            <a href={props.app} target="_blank" rel="noopener noreferrer"> <h4>Check it out</h4>
+      </a>
           </div>
         </div>
       )
@@ -30,11 +33,15 @@ import BlindDateHome from "../../content/assets/BlindDate_Home.png"
                 name="BlindDate"
                 avatar= {BlindDateHome}
                 excerpt="A social/dating application that facilitates relationships without the bias of user photos"
+                link='/blinddate/'
+                app='http://blinddate-js.herokuapp.com/'
                 />
                 <User
                 name="Connect Sindy"
                 avatar= {SindyHome}
-                excerpt="A cow-themed version of Connect Four (two-player)"
+                excerpt="A cow-themed version of Connect Four"
+                link='/connectSindy/'
+                app='https://connect-sindy-frontend.herokuapp.com/'
                 />
                 <br></br>
                 <p>Check out my <a href={`https://github.com/jlindner22`}>GitHub</a> page to see what else I've been working on!</p>

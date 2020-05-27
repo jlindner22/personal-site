@@ -1,0 +1,27 @@
+.user {
+    /* display: flex; */
+    align-items: center;
+    margin: 0 auto 12px auto;
+  }
+  
+  .user:last-child {
+    margin-bottom: 0;
+  }
+  
+  .screenshot {
+    /* flex: 0 1 375px; */
+    /* width: auto;
+    height: auto; */
+    margin: 0;
+  }
+  
+  .description {
+    flex: 1;
+    margin-left: 20px;
+    /* padding: 12px; */
+  }
+  
+  .name {
+    margin: 0 0 12px 0;
+    padding: 0;
+  }

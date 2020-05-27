@@ -8,7 +8,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 // import Image from "gatsby-image"
-import Container from "../components/container"
+import Container from "./container"
 import pic from "../../content/assets/IMG_9702.jpeg"
 import { rhythm } from "../utils/typography"
 
