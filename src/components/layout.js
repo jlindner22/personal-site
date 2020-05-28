@@ -59,7 +59,7 @@ const Layout = ({ location, title, children }) => {
       {/* <header>{header}</header> */}
       <header style={{ marginBottom: `1.5rem` }}>
         <Link to="/" style={{ textShadow: `none`, backgroundImage: `none`, textDecoration: 'none'}}>
-          <h3 style={{ display: `inline`, marginLeft: `-15rem`}}>Jen's World</h3>
+          <h3 style={{ display: `inline`, marginLeft: `-15rem`}}>Home</h3>
         </Link>
         <ul style={{ listStyle: `none`, float: `right`, marginRight: `-15rem` }}>
           <ListLink to="/portfolio">Portfolio</ListLink>
@@ -69,7 +69,7 @@ const Layout = ({ location, title, children }) => {
       </header>
       <main>{children}</main>
       <br></br>
-      <footer style={{ color: `white`, textAlign: `center`}}>
+      <footer style={{ color: `navy`, textAlign: `center`}}>
         Built with {` `} <a href="https://www.gatsbyjs.org">Gatsby</a> © {new Date().getFullYear()}
       </footer>
     </div>

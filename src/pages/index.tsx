@@ -40,7 +40,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Jen's Site" />
       <Bio />
-      {/* {posts.map(({ node }) => {
+      {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article key={node.fields.slug}>
@@ -65,7 +65,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
             </section>
           </article>
         )
-      })} */}
+      })}
     </Layout>
   )
 }

@@ -1,5 +1,14 @@
 html {
-    background-color: #96c4ff;
-    color: white;
-    /* text-decoration: none */
+    /* background-color: #96c4ff; */
+    /* background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    background: linear-gradient(90deg, rgba(177, 234, 250, 0.376) 0%, rgba(191, 252, 197, 0.527) 100%); */
+        /* background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%); */
+        /* background-color: rgba(164, 234, 251, 0.376); */
+        /* background-color: rgba(177, 234, 250, 0.376); */
+        background-color: white;
+    color: navy;
+  }
+
+  a {
+    color: navy;
   }

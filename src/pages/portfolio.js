@@ -26,7 +26,7 @@ import BlindDateHome from "../../content/assets/BlindDate_Home.png"
         <Container>
 
         {props.title}
-        <div style={{ color: `white` }}>
+        <div style={{ color: `navy` }}>
         <Header headerText="My Portfolio" />
         <p> Feel free to <a href="mailto:jenlindner22@gmail.com">contact me </a>with any questions!</p>
         <User

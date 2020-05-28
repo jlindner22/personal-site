@@ -23,13 +23,13 @@ import Matches from "../../content/assets/BlindDate_Matches.png"
     return (
         <Layout location={props.location} title={props.siteTitle}>
         <Container>
-        <div style={{ color: `white`}}>
+        <div style={{ color: `navy`}}>
         <Header headerText="BlindDate" />
 
             
         </div>
         {/* {props.title}
-        <div style={{ color: `white` }}>
+        <div style={{ color: `navy` }}>
         <Header headerText="My Portfolio" />
         <p> Feel free to <a href="mailto:jenlindner22@gmail.com">contact me </a>with any questions!</p>
         <User

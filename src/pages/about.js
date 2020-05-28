@@ -18,14 +18,14 @@ import pic from "../../content/assets/IMG_9702.jpeg"
         return (
             <Layout>
             <Container>
-                <h1 style={{ color: `white` }}>About Me</h1>
+                <h1 style={{ color: `navy` }}>About Me</h1>
                 <User 
                 name="Hi, I'm Jen!"
                 avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
                 excerpt="I'm an avid jigsaw puzzle solver, standup comedy viewer, chocolate consumer, dog lover, and aspiring software engineer."
                 />
-                <h2 style={{ color: `white`}}>Technical Skills</h2>
-                <div style={{ color: `white`, fontWeight: `bold`, textAlign: `left` }}>
+                <h2 style={{ color: `navy`}}>Technical Skills</h2>
+                <div style={{ color: `navy`, fontWeight: `bold`, textAlign: `left` }}>
                  <li> JavaScript </li>
                  <li> React </li>
                  <li> Redux </li>

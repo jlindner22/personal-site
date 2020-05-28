@@ -9,7 +9,8 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 // import Image from "gatsby-image"
 import Container from "./container"
-import pic from "../../content/assets/IMG_9702.jpeg"
+import ParkGuell from "../../content/assets/IMG_9702.jpeg"
+import sledding from "../../content/assets/sledding.jpeg"
 import { rhythm } from "../utils/typography"
 
 const Bio = () => {
@@ -31,18 +32,18 @@ const Bio = () => {
   `)
 
 
-  const { author, social, pictures } = data.site.siteMetadata
+  const { author, social } = data.site.siteMetadata
   return (
     <Container>
     <div
       style={{
-        display: `flex`,
+        // display: `flex`,
         marginBottom: rhythm(2.5),
       }}
     >
-      {/* <img fluid={pic.childImageSharp.fluid} alt="" /> */}
+      {/* <img fluid={ParkGuell.childImageSharp.fluid} alt="" /> */}
 
-      <img src={pic}
+      <img src={ParkGuell}
           // fixed={data.avatar.childImageSharp.fixed}
          alt={author.name}
          style={{
