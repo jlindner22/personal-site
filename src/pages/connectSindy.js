@@ -1,8 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 // import Header from "../components/header"
 import Container from "../components/container"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
     // const User = props => (
     //     <div className={styles.user}>
@@ -18,6 +19,7 @@ import Layout from "../components/layout"
 
     return (
         <Layout location={props.location} title={props.siteTitle}>
+        <SEO title="Jen's Site" />
         <Container>
         <div>
             connectSindy

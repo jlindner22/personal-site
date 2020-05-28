@@ -1,12 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import Header from "../components/header"
 import Container from "../components/container"
+import SEO from "../components/seo"
 import Layout from "../components/layout"
 import styles from './blinddate.module.css'
-import SindyHome from "../../content/assets/Connect_Sindy_Home.png"
 import Matches from "../../content/assets/BlindDate_Matches.png"
-  
+
 
     const User = props => (
         <div className={styles.user}>
@@ -22,6 +22,7 @@ import Matches from "../../content/assets/BlindDate_Matches.png"
 
     return (
         <Layout location={props.location} title={props.siteTitle}>
+        <SEO title="Jen's Site" />
         <Container>
         <div style={{ color: `navy`}}>
         <Header headerText="BlindDate" />

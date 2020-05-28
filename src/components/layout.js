@@ -70,7 +70,7 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
       <br></br>
       <footer style={{ color: `navy`, textAlign: `center`}}>
-        Built with {` `} <a href="https://www.gatsbyjs.org">Gatsby</a> © {new Date().getFullYear()}
+        Built by Jennifer Lindner with {` `} <a href="https://www.gatsbyjs.org">Gatsby</a> © {new Date().getFullYear()}
       </footer>
     </div>
   )

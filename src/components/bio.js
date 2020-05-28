@@ -47,8 +47,11 @@ const Bio = () => {
           // fixed={data.avatar.childImageSharp.fixed}
          alt={author.name}
          style={{
-           marginRight: rhythm(1 / 2),
-           marginBottom: 0,
+            width: `300px`,
+            height: `400px`,
+
+          //  marginRight: rhythm(1 / 2),
+          //  marginBottom: 0,
           //  minWidth: 100,
            borderRadius: `100%`,
          }}
@@ -57,7 +60,7 @@ const Bio = () => {
          }}
       />
       <p>
-        Written by <strong>{author.name}</strong>, {author.summary}
+        {/* Written by <strong>{author.name}</strong>, {author.summary} */}
         {` `}
         <a href={`https://www.linkedin.com/in/${social.linkedin}`}>
           LinkedIn
