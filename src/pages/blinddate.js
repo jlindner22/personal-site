@@ -6,6 +6,14 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import styles from './blinddate.module.css'
 import Matches from "../../content/assets/BlindDate_Matches.png"
+import Home from "../../content/assets/BlindDate_Home.png"
+import MyProfile from "../../content/assets/BlindDate_MyProfile.png"
+import NoPreferences from "../../content/assets/BlindDate_NoPreferences.png"
+import Preferences from "../../content/assets/BlindDate_Preferences.png"
+import PreferencesSelected from "../../content/assets/BlindDate_PreferencesSelected.png"
+import UserProfile from "../../content/assets/BlindDate_UserProfile.png"
+import EditAccount from "../../content/assets/BlindDate_EditAccount.png"
+import EditMainPage from "../../content/assets/BlindDate_EditMainPage.png"
 
     const User = props => (
         <div className={styles.user}>
@@ -24,37 +32,57 @@ import Matches from "../../content/assets/BlindDate_Matches.png"
         <SEO title="Jen Lindner" />
         <Container>
         <div style={{ color: `navy`}}>
-        <Header headerText="BlindDate" />
-
-            
+        <Header headerText="BlindDate" />   
         </div>
-        {/* {props.title}
-        <div style={{ color: `navy` }}>
-        <Header headerText="My Portfolio" />
-        <p> Feel free to <a href="mailto:jenlindner22@gmail.com">contact me </a>with any questions!</p>
-        <User
-                name="BlindDate"
-                screenshot= {BlindDateHome}
-                excerpt="A social/dating application that facilitates relationships without the bias of user photos"
-                link='/blinddate/'
-                />
-                <User
-                name="Connect Sindy"
-                screenshot= {SindyHome}
-                excerpt="A cow-themed version of Connect Four"
-                link='/connectSindy/'
-                />
-                <br></br>
-                <p>Check out my <a href={`https://github.com/jlindner22`}>GitHub</a> page to see what else I've been working on!</p>
-
-    </div> */}
-
+          <User
+          name="Home"
+          screenshot= {Home}
+          excerpt="Home page - choose to log into an existing account or sign up for a new account"
+          />
           <User
           name="Matches"
           screenshot= {Matches}
-          excerpt="Users you have matched with"
-          // link='/blinddate/'
+          excerpt="Display all users you have matched with. You can delete a match from this page"
           />
+          <User
+          name="My Profile"
+          screenshot= {MyProfile}
+          excerpt="Your profile page, with the option to edit your information"
+          />
+          <User
+          name="Preferences Selection"
+          screenshot= {PreferencesSelected}
+          excerpt="Shows your preference choices and allows you to edit your selections"
+          />
+          <User
+          name="Preference Matches"
+          screenshot= {Preferences}
+          excerpt="Displays all user profiles matching the preferences you've set"
+          />
+          <User
+          name="No Preferences"
+          screenshot= {NoPreferences}
+          excerpt="This page appears if no user profiles match the exact preferences you've set"
+          />
+          <User
+          name="User Profile"
+          screenshot= {UserProfile}
+          excerpt="Another user's profile, with the option to match with them"
+          />
+          <User
+          name="Edit Main Page"
+          screenshot= {EditMainPage}
+          excerpt="Choose which part of your profile/account you'd like to adjust"
+          />
+          <User
+          name="Edit Account"
+          screenshot= {EditAccount}
+          excerpt="One of multiple pages enabling the user to edit their account/profile"
+          />
+
+    <a href='https://connect-sindy-frontend.herokuapp.com/' target="_blank" rel="noopener noreferrer"> <p style={{ fontVariant: `small-caps`, fontWeight: `bolder`, fontSize: `25px`}}>Sign up now!</p></a>
+    <p style={{ color: `navy`}}>Check out my <a href='https://github.com/jlindner22' target="_blank" rel="noopener noreferrer">GitHub</a> page to see what else I've been working on!</p>
+
     </Container>
     </Layout>
   )

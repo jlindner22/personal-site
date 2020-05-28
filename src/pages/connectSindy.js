@@ -1,4 +1,5 @@
 import React from "react"
+// import { Link } from "gatsby"
 import Header from "../components/header"
 import Container from "../components/container"
 import SEO from "../components/seo"
@@ -19,7 +20,7 @@ import Home from "../../content/assets/Connect_Sindy_Home.png"
         </div>
       )
 
-    export default function BlindDate(props) {
+    export default function ConnectSindy(props) {
 
     return (
         <Layout location={props.location} title={props.siteTitle}>
@@ -45,6 +46,7 @@ import Home from "../../content/assets/Connect_Sindy_Home.png"
           />
 <a href='https://connect-sindy-frontend.herokuapp.com/' target="_blank" rel="noopener noreferrer"> <p style={{ fontVariant: `small-caps`, fontWeight: `bolder`, fontSize: `25px`}}>Play now!</p></a>
 <p style={{ color: `navy`}}>Check out my <a href='https://github.com/jlindner22' target="_blank" rel="noopener noreferrer">GitHub</a> page to see what else I've been working on!</p>
+{/* <Link to='/portfolio'> <h5 style={{ textAlign: `left`}}>Back to Portfolio</h5></Link> */}
 
     </Container>
     </Layout>

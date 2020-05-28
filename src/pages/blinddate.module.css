@@ -1,6 +1,7 @@
 .user {
     /* display: flex; */
     align-items: center;
+    color: navy;
     margin: 0 auto 12px auto;
   }
   
@@ -9,14 +10,14 @@
   }
   
   .screenshot {
-    /* flex: 0 1 375px; */
-    /* width: auto;
-    height: auto; */
+    border-style: solid;
+    border-width: thin;
     margin: 0;
   }
   
   .excerpt {
     margin-bottom: 50px;
+    font-style: oblique;
   }
   
   .name {
