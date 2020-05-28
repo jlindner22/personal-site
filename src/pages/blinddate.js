@@ -7,7 +7,6 @@ import Layout from "../components/layout"
 import styles from './blinddate.module.css'
 import Matches from "../../content/assets/BlindDate_Matches.png"
 
-
     const User = props => (
         <div className={styles.user}>
           <div className={styles.description}>

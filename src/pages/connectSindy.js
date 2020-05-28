@@ -1,49 +1,51 @@
 import React from "react"
-// import { Link } from "gatsby"
-// import Header from "../components/header"
+import Header from "../components/header"
 import Container from "../components/container"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Layout from "../components/layout"
+import styles from './connectSindy.module.css'
+import Gameboard from "../../content/assets/Connect_Sindy_Gameboard.png"
+import Leaderboard from "../../content/assets/Connect_Sindy_Leaderboard.png"
+import Home from "../../content/assets/Connect_Sindy_Home.png"
 
-    // const User = props => (
-    //     <div className={styles.user}>
-    //      <img src={props.avatar} className={styles.avatar} alt="thumbnail" />
-    //       <div className={styles.description}>
-    //       <Link to={props.link}> <h2 className={styles.name}>{props.name}</h2></Link>
-    //         <p className={styles.excerpt}>{props.excerpt}</p>
-    //       </div>
-    //     </div>
-    //   )
 
-    export default function connectSindy(props) {
+    const User = props => (
+        <div className={styles.user}>
+          <div className={styles.description}>
+          <h2 className={styles.name}>{props.name}</h2>
+         <img src={props.screenshot} className={styles.screenshot} alt="thumbnail" />
+            <p className={styles.excerpt}>{props.excerpt}</p>
+          </div>
+        </div>
+      )
+
+    export default function BlindDate(props) {
 
     return (
         <Layout location={props.location} title={props.siteTitle}>
         <SEO title="Jen Lindner" />
         <Container>
-        <div>
-            connectSindy
+        <div style={{ color: `navy`}}>
+        <Header headerText="Connect Sindy" />
         </div>
-        {/* {props.title}
-        <div style={{ color: `navy` }}>
-        <Header headerText="My Portfolio" />
-        <p> Feel free to <a href="mailto:jenlindner22@gmail.com">contact me </a>with any questions!</p>
-        <User
-                name="BlindDate"
-                avatar= {BlindDateHome}
-                excerpt="A social/dating application that facilitates relationships without the bias of user photos"
-                link='/blinddate/'
-                />
-                <User
-                name="Connect Sindy"
-                avatar= {SindyHome}
-                excerpt="A cow-themed version of Connect Four"
-                link='/connectSindy/'
-                />
-                <br></br>
-                <p>Check out my <a href={`https://github.com/jlindner22`}>GitHub</a> page to see what else I've been working on!</p>
+          <User
+          name="Home/New Game"
+          screenshot= {Home}
+          excerpt="Home screen where players enter their names and start a new game"
+          />
+          <User
+          name="Gameboard"
+          screenshot= {Gameboard}
+          excerpt="The Connect Sindy gameboard in action! Hover and drop animation effects make the gameplay more realistic"
+          />
+          <User
+          name="Leaderboard"
+          screenshot= {Leaderboard}
+          excerpt="See who else has played and view their game results"
+          />
+<a href='https://connect-sindy-frontend.herokuapp.com/' target="_blank" rel="noopener noreferrer"> <p style={{ fontVariant: `small-caps`, fontWeight: `bolder`, fontSize: `25px`}}>Play now!</p></a>
+<p style={{ color: `navy`}}>Check out my <a href='https://github.com/jlindner22' target="_blank" rel="noopener noreferrer">GitHub</a> page to see what else I've been working on!</p>
 
-    </div> */}
     </Container>
     </Layout>
   )
