@@ -24,7 +24,7 @@ export default function Portfolio(props) {
 
     return (
         <Layout location={props.location} title={props.siteTitle}>
-        <SEO title="Jen's Site" />
+        <SEO title="Jen Lindner" />
         <Container>
 
         {props.title}

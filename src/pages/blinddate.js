@@ -22,7 +22,7 @@ import Matches from "../../content/assets/BlindDate_Matches.png"
 
     return (
         <Layout location={props.location} title={props.siteTitle}>
-        <SEO title="Jen's Site" />
+        <SEO title="Jen Lindner" />
         <Container>
         <div style={{ color: `navy`}}>
         <Header headerText="BlindDate" />

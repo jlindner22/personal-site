@@ -19,7 +19,7 @@ import SEO from "../components/seo"
 
     return (
         <Layout location={props.location} title={props.siteTitle}>
-        <SEO title="Jen's Site" />
+        <SEO title="Jen Lindner" />
         <Container>
         <div>
             connectSindy

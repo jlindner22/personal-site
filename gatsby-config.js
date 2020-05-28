@@ -1,19 +1,18 @@
+// 🔥🌺💃🏻
+
 module.exports = {
   siteMetadata: {
-    title: `Welcome!`,
+    title: `🌺`,
     author: {
       name: `Jen Lindner`,
       summary: `jigsaw puzzle solver and aspiring software engineer.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Jen's Personal Website`,
     siteUrl: `https://jen.lindner.netlify.app/`,
     social: {
       linkedin: `jen-lindner13/`,
       github: `jlindner22/`
     },
-    pictures: {
-      home: `/IMG_9702.jpeg`
-    }
   },
   plugins: [
     {
@@ -77,7 +76,8 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/blog-icon.png`,
+        icon: `content/assets/IMG_9301.png`,
+        // icon: `content/assets/blog-icon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
