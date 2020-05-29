@@ -35,7 +35,7 @@ import EditMainPage from "../../content/assets/BlindDate_EditMainPage.png"
         <Header headerText="BlindDate" />   
         </div>
           <User
-          name="Home"
+          // name="Home"
           screenshot= {Home}
           excerpt="Home page - choose to log into an existing account or sign up for a new account"
           />
@@ -81,8 +81,7 @@ import EditMainPage from "../../content/assets/BlindDate_EditMainPage.png"
           />
 
     <a href='https://connect-sindy-frontend.herokuapp.com/' target="_blank" rel="noopener noreferrer"> <p style={{ fontVariant: `small-caps`, fontWeight: `bolder`, fontSize: `25px`}}>Sign up now!</p></a>
-    <p style={{ color: `navy`}}>Check out my <a href='https://github.com/jlindner22' target="_blank" rel="noopener noreferrer">GitHub</a> page to see what else I've been working on!</p>
-
+    <p style={{ color: `navy`}}><a href='https://github.com/jlindner22/BlindDate-frontend' target="_blank" rel="noopener noreferrer">Frontend </a> & <a href='https://github.com/jlindner22/BlindDate-backend' target="_blank" rel="noopener noreferrer">Backend</a> </p>
     </Container>
     </Layout>
   )

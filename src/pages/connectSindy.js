@@ -30,7 +30,7 @@ import Home from "../../content/assets/Connect_Sindy_Home.png"
         <Header headerText="Connect Sindy" />
         </div>
           <User
-          name="Home/New Game"
+          // name="Home/New Game"
           screenshot= {Home}
           excerpt="Home screen where players enter their names and start a new game"
           />
@@ -45,7 +45,7 @@ import Home from "../../content/assets/Connect_Sindy_Home.png"
           excerpt="See who else has played and view their game results"
           />
 <a href='https://connect-sindy-frontend.herokuapp.com/' target="_blank" rel="noopener noreferrer"> <p style={{ fontVariant: `small-caps`, fontWeight: `bolder`, fontSize: `25px`}}>Play now!</p></a>
-<p style={{ color: `navy`}}>Check out my <a href='https://github.com/jlindner22' target="_blank" rel="noopener noreferrer">GitHub</a> page to see what else I've been working on!</p>
+<p style={{ color: `navy` }}><a href='https://github.com/crpineda1/connect-sindy-frontend' target="_blank" rel="noopener noreferrer">Frontend </a> & <a href='https://github.com/crpineda1/Connect-Sindy_backend' target="_blank" rel="noopener noreferrer">Backend</a> </p>
 {/* <Link to='/portfolio'> <h5 style={{ textAlign: `left`}}>Back to Portfolio</h5></Link> */}
 
     </Container>

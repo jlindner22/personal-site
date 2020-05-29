@@ -1,7 +1,6 @@
 import React from 'react'
 import { rhythm, scale } from '../utils/typography'
 import { Link } from 'gatsby'
-import PG from "../../content/assets/PG2015.jpeg"
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
@@ -10,17 +9,15 @@ const ListLink = props => (
 )
 
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  let header
-
-  // if (location.pathname === rootPath) {
-    header = (
+  // const rootPath = `${__PATH_PREFIX__}/`
+  let header = (
       <h1
         style={{
           fontFamily: `Montserrat, sans-serif`,
           ...scale(1.2),
-          marginBottom: rhythm(1.5),
+          // marginBottom: rhythm(1.5),
           marginTop: 0,
+          padding: 0,
           boxShadow: `none`,
           color: `inherit`,
           }}
@@ -28,26 +25,7 @@ const Layout = ({ location, title, children }) => {
            Welcome to Jen's World!
       </h1>
     )
-  // } else {
-  //   header = (
-  //     <h3
-  //       style={{
-  //         fontFamily: `Montserrat, sans-serif`,
-  //         marginTop: 0,
-  //       }}
-  //     >
-  //       <Link
-  //         style={{
-  //           boxShadow: `none`,
-  //           color: `inherit`,
-  //         }}
-  //         to={`/`}
-  //       >
-  //         {title}
-  //       </Link>
-  //     </h3>
-  //   )
-  // }
+
   return (
     <div
       style={{

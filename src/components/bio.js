@@ -10,8 +10,8 @@ import { useStaticQuery, graphql } from "gatsby"
 // import Image from "gatsby-image"
 import Container from "./container"
 import ParkGuell from "../../content/assets/IMG_9702.jpeg"
-import sledding from "../../content/assets/sledding.jpeg"
 import { rhythm } from "../utils/typography"
+import styles from './bio.module.css'
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -34,33 +34,16 @@ const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <Container>
-    <div
-      style={{
-        // display: `flex`,
-        marginBottom: rhythm(2.5),
-      }}
-    >
-      {/* <img fluid={ParkGuell.childImageSharp.fluid} alt="" /> */}
-
-      <img src={ParkGuell}
-          // fixed={data.avatar.childImageSharp.fixed}
+    <Container style={{ fontFamily: `Montserrat, sans-serif` }}>
+      <div className={styles.outerDiv}>
+        <div className={styles.divSpec}>
+        <h2 style={{ marginTop: `0px`, fontVariant: `small-caps`}}>Hi, I'm Jen! <span>👋🏻</span></h2>
+      <img className={styles.mainPic} src={ParkGuell}
          alt={author.name}
-         style={{
-            width: `300px`,
-            height: `400px`,
-
-          //  marginRight: rhythm(1 / 2),
-          //  marginBottom: 0,
-          //  minWidth: 100,
-           borderRadius: `100%`,
-         }}
-         imgStyle={{
-           borderRadius: `50%`,
-         }}
-      />
-      <p>
-        {/* Written by <strong>{author.name}</strong>, {author.summary} */}
+         />
+        <h2 style={{ marginTop: `0px`, fontVariant: `small-caps`}}><span>🎊</span> Welcome to my personal site <span> 🎉</span></h2>
+         <br></br>
+         {/* <p>
         {` `}
         <a href={`https://www.linkedin.com/in/${social.linkedin}`}>
           LinkedIn
@@ -68,8 +51,9 @@ const Bio = () => {
         <a href={`https://github.com/${social.github}`}>
           GitHub
         </a>
-      </p>
-    </div>
+      </p> */}
+         </div> 
+     </div>
     </Container>
   )
 }
@@ -84,3 +68,7 @@ export default Bio;
 //     }
 //   }
 // }
+
+   //  imgStyle={{
+  //    borderRadius: `50%`,
+  //  }}

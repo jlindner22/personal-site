@@ -49,9 +49,8 @@ export default function About() {
                     <li> CSS </li>
                     <ul> ...and I'm currently learning Python!</ul>
                     </div>
-                    <br></br>
                     <div style={{ color: `navy`, textAlign: `center`, fontWeight: `bold`, textDecoration: `none` }}>
-                    <a href="https://www.linkedin.com/in/jen-lindner13/" target="_blank" rel="noopener noreferrer"> Let's connect! </a>
+                    <a href="https://www.linkedin.com/in/jen-lindner13/" target="_blank" rel="noopener noreferrer"><h4> Let's connect! </h4></a>
                 </div>
             </Container>
         </Layout>
