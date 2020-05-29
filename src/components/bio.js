@@ -7,20 +7,15 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
-
+// import Image from "gatsby-image"
+import Container from "./container"
+import ParkGuell from "../../content/assets/IMG_9702.jpeg"
 import { rhythm } from "../utils/typography"
+import styles from './bio.module.css'
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.png/" }) {
-        childImageSharp {
-          fixed(width: 50, height: 50) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
       site {
         siteMetadata {
           author {
@@ -29,42 +24,51 @@ const Bio = () => {
           }
           social {
             linkedin
+            github
           }
         }
       }
     }
   `)
 
+
   const { author, social } = data.site.siteMetadata
   return (
-    <div
-      style={{
-        display: `flex`,
-        marginBottom: rhythm(2.5),
-      }}
-    >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author.name}
-        style={{
-          marginRight: rhythm(1 / 2),
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
-        }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-      />
-      <p>
-        Written by <strong>{author.name}</strong> {author.summary}
+    <Container style={{ fontFamily: `Montserrat, sans-serif` }}>
+      <div className={styles.outerDiv}>
+        <div className={styles.divSpec}>
+        <h2 style={{ marginTop: `0px`, fontVariant: `small-caps`}}>Hi, I'm Jen! <span>👋🏻</span></h2>
+      <img className={styles.mainPic} src={ParkGuell}
+         alt={author.name}
+         />
+        <h2 style={{ marginTop: `0px`, fontVariant: `small-caps`}}><span>🎊</span> Welcome to my personal site <span> 🎉</span></h2>
+         <br></br>
+         {/* <p>
         {` `}
         <a href={`https://www.linkedin.com/in/${social.linkedin}`}>
-          You should connect with him on LinkedIn
+          LinkedIn
+        </a> {`  `}
+        <a href={`https://github.com/${social.github}`}>
+          GitHub
         </a>
-      </p>
-    </div>
+      </p> */}
+         </div> 
+     </div>
+    </Container>
   )
 }
 
-export default Bio
+export default Bio;
+
+
+// avatar: file(absolutePath: { regex: "/IMG_9702.jpeg" }) {
+//   childImageSharp {
+//     fixed(width: 50, height: 50) {
+//       ...GatsbyImageSharpFixed
+//     }
+//   }
+// }
+
+   //  imgStyle={{
+  //    borderRadius: `50%`,
+  //  }}

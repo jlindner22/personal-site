@@ -220,4 +220,4 @@ The HSTS value needs to be:
 
 You can make sure that your site is preloaded into Chromium browsers as the one that is always served over `https`. Use this tool to do it: [HSTS Preload List Submission](https://hstspreload.org/)
 
-This is it. We’ve gone through all the steps and have successfully created, deployed, and secured our website with browser security headers on Netlify.
+This is it. We’ve gone through all the steps and have successfully created, deployed, and secured our website with browser security headers on Netlify.# personal-site

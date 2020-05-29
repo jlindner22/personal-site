@@ -1,14 +1,17 @@
+// 🔥🌺💃🏻
+
 module.exports = {
   siteMetadata: {
-    title: `Deploy and Secure`,
+    title: `🌺`,
     author: {
-      name: `Oleg Chursin`,
-      summary: `who lives and works in New York building cool things.`,
+      name: `Jen Lindner`,
+      summary: `jigsaw puzzle solver and aspiring software engineer.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `Jen's Personal Website`,
+    siteUrl: `https://jen.lindner.netlify.app/`,
     social: {
-      linkedin: `olegchursin`
+      linkedin: `jen-lindner13/`,
+      github: `jlindner22/`
     },
   },
   plugins: [
@@ -48,8 +51,15 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+      `gatsby-transformer-sharp`,
+      `gatsby-plugin-sharp`,
+      {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+          path: `${__dirname}/content/assets`,
+        },
+      },
+    
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -66,7 +76,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/blog-icon.png`,
+        icon: `content_tab/assets/Sunset.png`,
       },
     },
     `gatsby-plugin-react-helmet`,

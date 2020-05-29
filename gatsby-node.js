@@ -1,10 +1,16 @@
+// require(`@babel/register`)
+// module.exports = require(`./gatsby-node.mjs`)
+
 const path = require(`path`)
+// import path from '/path';
+
 const { createFilePath } = require(`gatsby-source-filesystem`)
+// import { createFilePath } from './gatsby-source-filesystem'
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const screenshot = path.resolve(`./src/templates/pictures.js`)
   const result = await graphql(
     `
       {
@@ -40,7 +46,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     createPage({
       path: post.node.fields.slug,
-      component: blogPost,
+      component: screenshot,
       context: {
         slug: post.node.fields.slug,
         previous,

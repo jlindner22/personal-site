@@ -32,13 +32,15 @@ type Data = {
 
 const BlogIndex = ({ data, location }: PageProps<Data>) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
+  // const posts = data.allMarkdownRemark.edges
+
+  // return <div style={{ color: `purple`, fontSize: `72px` }}>Hello Gatsby!</div>
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title="Jen Lindner" />
       <Bio />
-      {posts.map(({ node }) => {
+      {/* {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article key={node.fields.slug}>
@@ -61,9 +63,9 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
                 }}
               />
             </section>
-          </article>
+          </article> 
         )
-      })}
+      })} */}
     </Layout>
   )
 }
